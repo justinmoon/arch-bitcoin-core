@@ -56,7 +56,7 @@ build() {
     --localstatedir=/var/lib/bitcoin \
     --enable-hardening \
     --with-gui=no \
-    --disable-wallet \
+    --with-incompatible-bdb \
     --without-miniupnpc \
     --with-gnu-ld
   make -j$_nproc
